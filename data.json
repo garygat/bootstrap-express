@@ -1,0 +1,151 @@
+{
+  "soccer": {
+    "name": "Soccer",
+    "subscribers": 800000,
+    "description": "The football subreddit. News, results and discussion about the beautiful game.",
+    "moderators": ["David", "Cristiano", "Lionel", "Marcelo", "Sergio"],
+    "rules": [
+      "Keep video highlights in appropriate threads.!",
+      "Duplicate posts will be removed.",
+      "Promotion must be kept within acceptable limits.",
+      "No personal attacks, witch-hunts, or inflammatory language",
+      "English Language only please!",
+      "No NSFW content"
+    ],
+    "posts": [
+      {
+        "title": "Marten de Roon to make pizza for more than 1,000 people in Bergamo if Atalanta win the Champions league.",
+        "author": "joeextreme"
+      },
+      {
+        "title": "Stephan Lichtsteiner has retired from professional football",
+        "author": "odd person"
+      },
+      {
+        "title": "OFFICIAL: Dani Parejo signs for Villareal.",
+        "author": "joeextreme"
+      },
+      {
+        "title": "Argentina Squad for World Cup 2022",
+        "author": "Obvious_Jello_6144",
+        "img": "https://preview.redd.it/3nz9v5qyvdz91.jpg?width=717&auto=webp&s=301421ee949add562ec5079da35164a7ed03647f"
+      },
+      {
+        "title": "What's everyone's pick for the World Cup? Team or Top Scorer",
+        "author": "odiams",
+        "img": "https://preview.redd.it/rqxo0t4tjgz91.png?width=993&auto=webp&s=3665752c528614af4353a86087a0c2820d69a5fa"
+      },
+      {
+        "title": "Man of the moment. Alejandro Garnacho",
+        "author": "Bobted1",
+        "img": "https://preview.redd.it/ejbzk67a0bz91.jpg?width=678&auto=webp&s=90ff2f8f40a67e6531a590410bbe0b1d5e399858"
+      },
+      {
+        "title": "Gerard Piqué poses with all the trophies he won at Barcelona.",
+        "author": "Golovking",
+        "img": "https://preview.redd.it/63mpoqbwvbz91.jpg?width=1024&auto=webp&s=3db0fe11ed74bc7cd1cebddd657c9f177586c170"
+      },
+      {
+        "title": "Korea Republic 2022 World Cup Squad",
+        "author": "bethelka",
+        "img": "https://preview.redd.it/xfi1d1ki4gz91.jpg?width=614&auto=webp&s=2fde40520804b82ab10c169bfa04e486dddadf3f"
+      }
+    ]
+  },
+  "chickens": {
+    "name": "Chickens",
+    "subscribers": 23956,
+    "description": "A place to post your photos, video and questions about chickens!",
+    "moderators": ["Viserys I", "Rhaenyra", "Rhaenys Velaryon", "Aegon II", "Daemon", "Aemond"],
+    "rules": [
+      "Please do not sell any artwork, crafts, or merchandise through your posts. If you see any posts that have links to buy a product - it is likely a scam! Please do not click these links. If you are a legitimate creator and want to sell a relevant product - please message the mods before posting.",
+      "Please report any spam posts that are attempting to sell you fake/stolen products, it will help the moderators to remove these posts faster!",
+      "Beyond the one rule, just use common sense and be nice. We'd love to see photos and videos of your chickens and we'll try our best to answer any questions you might have.",
+      "If your post isn't showing up: This could be due to the anti-spam filters we have placed. If your account is new or has low karma, your post may have been wrongly removed. If you believe your post was wrongly removed please message the moderators!"
+    ],
+    "posts": [
+      {
+        "title": "Naughty chicken hid under a shed for 3 weeks and came home with 25 chicks today!",
+        "author": "joeextreme",
+        "img": "https://preview.redd.it/pcn8u4j7c9z61.jpg?width=960&crop=smart&auto=webp&s=e114976dde1108b9556555d2db36a3cb6211798d"
+      },
+      {
+        "title": "Had to kill my first chicken today. Does it get any easier?",
+        "author": "sad boi"
+      },
+      {
+        "title": "My five year old chicken set and hatched one baby. I guess she wanted to be a mama one more time.",
+        "author": "tammythetiger",
+        "img": "https://preview.redd.it/lervkuis3me51.jpg?width=640&crop=smart&auto=webp&s=6a18ab3c4daa80eccf3449217589b922fa443946"
+      },
+      {
+        "title": "Homework must be supervised at all times.",
+        "author": "PunkBawk",
+        "img": "https://preview.redd.it/0yomzs0onez91.jpg?width=1024&auto=webp&s=79f1e0a05557bf95037c0d594b540993513f5a3e"
+      },
+      {
+        "title": "This is like.. the best pic I've ever taken with my chicken.",
+        "author": "pogbros",
+        "img": "https://preview.redd.it/l508cf0v0gz91.png?width=634&auto=webp&s=14d850490aa865eda38ac7df2c0099184bd22413"
+      },
+      {
+        "title": "Found this pic I took 7 years ago of my boy Mojo, he's still kickin' and still ornery!",
+        "author": "Free_Cut_3601",
+        "img": "https://preview.redd.it/mkxgo0zsxgz91.jpg?width=1024&auto=webp&s=e677a159898817a607a416c525170b5fb3c9091e"
+      },
+      {
+        "title": "They wanted to explore inside lol",
+        "author": "Theeskinnykween",
+        "img": "https://preview.redd.it/acym5drn8hz91.jpg?width=629&auto=webp&s=9eb2d65bd8792fc5996eb9475aa5f55178abfafa"
+      }
+    ]
+  },
+  "mightyharvest": {
+    "name": "Mighty Harvest",
+    "subscribers": 44002,
+    "description": "Feeding many villages and village idiots for 10s of days.",
+    "moderators": ["Kuya Kim", "Mang Berting", "Lolo Jim", "Aling Ubeng"],
+    "rules": [
+      "No trolls under the village bridge!",
+      "Abusive or offensive content will result in an immediate ban.",
+      "'[Coin, Banana] for scale' are encouraged!"
+    ],
+    "posts": [
+      {
+        "title": "My first meyer lemon ripened today. Im so proud of the little guy. Banana for scale",
+        "author": "proudmamma",
+        "img": "https://preview.redd.it/1bz6we4j54941.jpg?width=640&crop=smart&auto=webp&s=a036ea99299f7737efde9f6c3bfa43893f5eaa00"
+      },
+      {
+        "title": "I think I overestimated the harvest basket size I needed.",
+        "author": "grower123",
+        "img": "https://preview.redd.it/4h99osd25i351.jpg?width=640&crop=smart&auto=webp&s=d651250a345bbceeba7a66632e8c52a02d71bc73"
+      },
+      {
+        "title": "I work hard to keep the family fed!",
+        "author": "farts_in_your_hair",
+        "img": "https://preview.redd.it/gs8tlwvmasw91.jpg?width=576&auto=webp&s=25fbf223f4b9ce010d95476a3d28baef498c1a81"
+      },
+      {
+        "title": "Maybe next year...",
+        "author": "dead_Competition5196",
+        "img": "https://preview.redd.it/y2mokrs5j1t91.jpg?width=576&auto=webp&s=75091646644312888af6992ef7c1e5fe4252d6ec"
+      },
+      {
+        "title": "behold the bounty",
+        "author": "kattattack831",
+        "img": "https://preview.redd.it/r86il70zols91.jpg?width=576&auto=webp&s=e293146c6459917d6a5a7ede0814afb1b3036be9"
+      },
+      {
+        "title": "Dinner time!",
+        "author": "violetfrogs",
+        "img": "https://preview.redd.it/6l9johl6a3s91.jpg?width=576&auto=webp&s=decb9ddbe580a3f83e6ad7f635b2a63588cd7078"
+      },
+      {
+        "title": "Tonight we feast!",
+        "author": "Rethiriel",
+        "img": "https://preview.redd.it/3kp91pfodfq91.jpg?width=576&auto=webp&s=dc1fb4442a7b1aceb38f7238062d4358b24c5300"
+      }
+    ]
+  }
+}

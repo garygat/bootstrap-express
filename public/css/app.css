@@ -41,7 +41,7 @@ footer {
 }
 .img-post:hover {
   translate: 300px 0;
-  transform: scale(2.5);
+  transform: scale(1.7);
 }
 .side-header {
   font-size: 2rem;

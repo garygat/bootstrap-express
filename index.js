@@ -46,7 +46,7 @@ app.get(`/random`, (req, res) => {
 
 //#LISTENER
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`);
+  console.log(`bootstrap-express app listening on port ${port}!`);
 });
 
 // const express = require(`express`);

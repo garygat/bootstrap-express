@@ -1,6 +1,8 @@
+<!-- +HEAD BOILERPLATE -->
 <%- include('partials/head') %>
 
 <body>
+   <!-- +NAVBAR BOILERPLATE -->
    <%- include('partials/navbar') %>
    <div class="box1 container vh-100 d-flex flex-column justify-content-center align-items-center">
       <h1 class="text-center"><%= h1Rand %> <span class="text-warning"><%= rand %> </span></h1>
@@ -10,9 +12,10 @@
       <% } else{ %>
       <h2>This is an odd number.</h2>
       <% } %> -->
-
+      <!--=TERNIARY CONDITIONAL IF RANDOM === EVEN -->
       <h2 class="text-muted"><%= rand%2===0 ? 'This number is even.' : 'This number is odd.' %> </h2>
    </div>
+   <!-- +INCLUDE FOOTER BOILERPLATE -->
    <%- include('partials/footer') %>
 </body>
 

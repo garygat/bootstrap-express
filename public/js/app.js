@@ -19,6 +19,8 @@ setTimeout(() => {
     $('.navbar-collapse  >.collapse.m-0').removeClass('mt-3 mb-3');
   });
 }, 200);
+
+// !FIXED TOP TOGGLER
 window.onscroll = function () {
   if (window.pageYOffset > 150) {
     navB.classList.add('fixed-top');

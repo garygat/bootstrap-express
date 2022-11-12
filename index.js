@@ -16,21 +16,25 @@ app.set;
 //#EJS
 app.set('view engine', 'ejs');
 
-//GET
+//#GET REQUESTS, RESPONSE
+// =HOME
 app.get('/', (req, res) => {
   const name = 'Home';
   res.render('home', { name, title });
 });
+// =CATS
 app.get('/cats', (req, res) => {
   const name = 'Cats';
   const cats = ['Vhagar', 'Melys', 'Caraxes', 'Arrax', 'Sunfyre', 'Meraxes', 'Vermithor'];
   res.render('cats', { cats, name, title });
 });
+// =PAIN
 app.get('/tae', (req, res) => {
   const name = 'Awit';
   const tae = '7200 ';
   res.render('tae', { tae: tae, name, title });
 });
+// =SUBREDDIT PATH VARIABLE
 app.get('/r/:subreddit', (req, res) => {
   const random2 = Math.floor(Math.random() * 30) + 1;
   const { subreddit } = req.params;
@@ -38,10 +42,11 @@ app.get('/r/:subreddit', (req, res) => {
   if (data) {
     res.render('subreddit', { ...data, random2, title });
   } else {
-    res.render('notfound', { subreddit, title });
+    const name = 'Not Found';
+    res.render('notfound', { subreddit, title, name });
   }
 });
-
+// =RANDOM
 app.get(`/random`, (req, res) => {
   const name = 'Random';
   const random = Math.floor(Math.random() * 10) + 1;

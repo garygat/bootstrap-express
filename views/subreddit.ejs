@@ -1,7 +1,10 @@
+<!-- +HEAD BOILERPLATE -->
 <%- include('partials/head') %>
 
 <body>
+   <!-- +NAVBAR BOILERPLATE -->
    <%- include('partials/navbar') %>
+   <!-- +HERO CONDITIONALS -->
    <% if (name === 'Soccer') { %>
    <header class="h1 text-center bg-success text-white display-1 py-5 pt-5  mb-0"
       style="background: url('/images/soccer-banner.png') no-repeat center center/cover;">
@@ -24,8 +27,9 @@
                <% } %>
             </header>
             <div class="container-fluid pb-5">
-
+               <!-- +GRID -->
                <div class="row">
+                  <!-- ?LEFT COLUMN + DATA.JSON LOOP-->
                   <div class="col-xl-9 col-l-8 col-md-9 col-sm-6 pt-5">
                      <% for (let post of posts){ %>
                      <article class=" py-3">
@@ -40,6 +44,7 @@
                      </article>
                      <% } %>
                   </div>
+                  <!-- ?RIGHT COLUMN + JSON LOOP-->
                   <div class="col-xl-3 col-l-4 col-md-3 col-sm-6 bg-alice text-lg-center text-sm-center">
                      <p class="py-2 pt-6 display-3 side-header text-center text-lg-left"> Welcome to <%= name %>
                         subreddit</p>
@@ -87,6 +92,7 @@
                   <hr />
 
                </div>
+               <!-- +INCLUDE FOOTER BOILERPLATE -->
                <%- include('partials/footer') %>
 </body>
 

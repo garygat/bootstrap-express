@@ -1,0 +1,19 @@
+<%- include('partials/head') %>
+
+<body>
+   <%- include('partials/navbar') %>
+   <div class="box1 container vh-100 d-flex flex-column justify-content-center align-items-center">
+      <h1 class=""><%= h1Rand %> <span class="text-warning"><%= rand %> </span></h1>
+
+      <!-- <% if (rand % 2 === 0){ %>
+      <h2>This is an even number.</h2>
+      <% } else{ %>
+      <h2>This is an odd number.</h2>
+      <% } %> -->
+
+      <h2 class="text-muted"><%= rand%2===0 ? 'This number is even.' : 'This number is odd.' %> </h2>
+   </div>
+   <%- include('partials/footer') %>
+</body>
+
+</html>

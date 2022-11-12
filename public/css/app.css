@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer {
+  height: 60px;
+  margin-bottom: 0;
+}
+.container-fluid {
+  padding: 0 1% 5% 10%;
+}
+
+.text-kalam {
+  font-family: 'Kalam', cursive;
+}
+.text-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+.text-noto-sans {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.bg-coral {
+  background-color: coral;
+}
+.bg-teal {
+  background-color: teal;
+}
+.bg-dodger-blue {
+  background-color: dodgerblue;
+}
+.bg-alice {
+  background-color: aliceblue;
+}
+.img-post {
+  max-width: 30%;
+  transition: translate 1s, transform 1s;
+}
+.img-post:hover {
+  translate: 300px 0;
+  transform: scale(2.5);
+}
+.side-header {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    padding: 5% 3%;
+  }
+  .display-2 {
+    font-size: 2rem;
+  }
+  .side-header {
+    font-size: 1em;
+  }
+  .img-post {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-fluid {
+    padding: 5% 3%;
+  }
+  .display-2 {
+    font-size: 2rem;
+  }
+  .side-header {
+    font-size: 2rem;
+  }
+  .img-post {
+    max-width: 100%;
+  }
+}

@@ -10,9 +10,32 @@ footer {
 .container-fluid {
   padding: 0 1% 5% 10%;
 }
-
+.font-size-2 {
+  font-size: 2rem;
+}
 .text-kalam {
   font-family: 'Kalam', cursive;
+}
+.text-handlee {
+  font-family: 'Handlee', cursive;
+}
+.text-satisfy {
+  font-family: 'Satisfy', cursive;
+}
+.text-merienda {
+  font-family: 'Merienda', cursive;
+}
+.text-ad {
+  font-family: 'Architects Daughter', cursive;
+}
+.text-tangerine {
+  font-family: 'Tangerine', cursive;
+}
+.text-sil {
+  font-family: 'Shadows Into Light', cursive;
+}
+.text-ubuntu {
+  font-family: 'Ubuntu', sans-serif;
 }
 .text-open-sans {
   font-family: 'Open Sans', sans-serif;

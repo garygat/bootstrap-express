@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Cats</title>
-</head>
+<%- include('partials/head') %>
 
 <body>
-   <h1>All Cats</h1>
-   <ul>
-      <% for (let cat of cats){  %>
-      <li><%= cat %> </li>
-      <% } %>
-   </ul>
+   <%- include('partials/navbar') %>
+   <div class="container pt-5 py-5">
+      <h1 class="text-success text-center pt-5 pb-3 display-1">All Cats</h1>
+      <ul class="list group list-group-flush">
+         <% for (let cat of cats){  %>
+         <li class="list-group-item font-size-2 text-center text-sil"><%= cat %> </li>
+         <% } %>
+      </ul>
+   </div>
+   <%- include('partials/footer') %>
 </body>
 
 </html>

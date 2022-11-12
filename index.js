@@ -1,16 +1,21 @@
+//#DEC
 const express = require('express');
 const app = express();
 const path = require('path');
 const redditData = require('./data.json');
+const port = process.env.PORT || 3001;
 // console.log(redditData);
 
+//#DUNDIR PATH
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'images')));
 app.set;
 
+//#EJS
 app.set('view engine', 'ejs');
 app.set(`views`, path.join(__dirname, '/views'));
 
+//GET
 app.get('/', (req, res) => {
   res.render('home');
 });
@@ -39,8 +44,9 @@ app.get(`/random`, (req, res) => {
   res.render('random', { h1Rand: h1Label, rand: random });
 });
 
-app.listen(3000, () => {
-  console.log(`LISTENING ON PORT 3000`);
+//#LISTENER
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}!`);
 });
 
 // const express = require(`express`);

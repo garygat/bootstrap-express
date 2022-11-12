@@ -3,7 +3,7 @@
 <body>
    <%- include('partials/navbar') %>
    <% if (name === 'Soccer') { %>
-   <header class="h1 text-center bg-success text-white display-1 py-5 my-0 mb-0"
+   <header class="h1 text-center bg-success text-white display-1 py-5 pt-5  mb-0"
       style="background: url('/images/soccer-banner.png') no-repeat center center/cover;">
 
       <h1 class="display-2">/r/soccer </h1>
@@ -45,11 +45,11 @@
                         subreddit</p>
                      <p class=" py-2 lead text-center text-lg-left"><%= description %></p>
                      <div class="text-center">
-                        <img src="/images/reddit-prem.png" alt="show " class="  img-fluid text-center">
+                        <img src="/images/reddit-prem.png" alt="show " class=" img-fluid text-center rounded w-100">
                      </div>
                      <div class="card text-center mt-5">
                         <div class="card-header bg-success">
-                           <button class="btn btn text-white-50">Join</button>
+                           <button class="btn btn text-white">Join</button>
                         </div>
                         <div class="card-body">
                            <h5 class="card-title"><%= subscribers%> Total subscribers</p>

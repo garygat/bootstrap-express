@@ -4,6 +4,7 @@ const app = express();
 const path = require('path');
 const redditData = require('./data.json');
 const port = process.env.PORT || 3001;
+const title = 'Express JS | ';
 // console.log(redditData);
 
 //#DUNDIR PATH
@@ -17,31 +18,35 @@ app.set('view engine', 'ejs');
 
 //GET
 app.get('/', (req, res) => {
-  res.render('home');
+  const name = 'Home';
+  res.render('home', { name, title });
 });
 app.get('/cats', (req, res) => {
+  const name = 'Cats';
   const cats = ['Vhagar', 'Melys', 'Caraxes', 'Arrax', 'Sunfyre', 'Meraxes', 'Vermithor'];
-  res.render('cats', { cats });
+  res.render('cats', { cats, name, title });
 });
 app.get('/tae', (req, res) => {
+  const name = 'Awit';
   const tae = '7200 ';
-  res.render('tae', { tae: tae });
+  res.render('tae', { tae: tae, name, title });
 });
 app.get('/r/:subreddit', (req, res) => {
   const random2 = Math.floor(Math.random() * 30) + 1;
   const { subreddit } = req.params;
   const data = redditData[subreddit];
   if (data) {
-    res.render('subreddit', { ...data, random2 });
+    res.render('subreddit', { ...data, random2, title });
   } else {
-    res.render('notfound', { subreddit });
+    res.render('notfound', { subreddit, title });
   }
 });
 
 app.get(`/random`, (req, res) => {
+  const name = 'Random';
   const random = Math.floor(Math.random() * 10) + 1;
   const h1Label = `Your random number is: `;
-  res.render('random', { h1Rand: h1Label, rand: random });
+  res.render('random', { h1Rand: h1Label, rand: random, name, title });
 });
 
 //#LISTENER

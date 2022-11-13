@@ -25,7 +25,19 @@ app.get('/', (req, res) => {
 // =CATS
 app.get('/cats', (req, res) => {
   const name = 'Cats';
-  const cats = ['Vhagar', 'Melys', 'Caraxes', 'Arrax', 'Sunfyre', 'Meraxes', 'Vermithor'];
+  const cats = [
+    'Vhagar',
+    'Melys',
+    'Caraxes',
+    'Arrax',
+    'Sunfyre',
+    'Meraxes',
+    'Dreamfyre',
+    'Seasmoke',
+    'Syrax',
+    'Vermax',
+    'Vermithor',
+  ];
   res.render('cats', { cats, name, title });
 });
 // =PAIN

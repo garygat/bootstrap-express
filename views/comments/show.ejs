@@ -1,0 +1,36 @@
+<!-- +HEAD BOILERPLATE -->
+<%- include('../partials/head') %>
+
+<body>
+   <!-- +NAVBAR BOILERPLATE -->
+   <%- include('../partials/navbar') %>
+   <!-- =MAIN -->
+   <div class="container-fluid py-3">
+      <h1 class="text-black-50 text-center py-5 display-4 text-open-sans">Comments</h1>
+      <ul class="list group list-group-flush">
+         <!-- =GRAB COMMENTS-->
+         <div class="container-fluid py-3 text-center font-size-2">
+
+            <p class="lead">Comment ID: <%= comment.id%></p>
+            <p class="lead"><%= comment.comment %></p>
+            <p class=" blockquote-footer"><span class="text-primary "><%= comment.username %>
+               </span></p>
+            <div class="py-5">
+
+               <a href="/comments/<%= comment.id %>/edit "> <button type="button"
+                     class="btn btn-primary text-white">Edit
+                  </button></a>
+               <form action="/comments/<%= comment.id %>?_method=DELETE" method="post">
+                  <button class="btn btn-danger text-white">Delete
+                  </button>
+               </form>
+               <a href="/comments"> <button type="button" class="btn btn-warning text-white">Back to Comments
+                  </button></a>
+
+            </div>
+         </div>
+         <!-- +FOOTER BOILERPLATE -->
+         <%- include('../partials/footer') %>
+</body>
+
+</html>

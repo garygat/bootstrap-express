@@ -4,7 +4,11 @@ const app = express();
 const path = require('path');
 const redditData = require('./data.json');
 const port = process.env.PORT || 3001;
+const methodOverride = require(`method-override`);
 const title = 'Express JS | ';
+const { v4: uuid } = require(`uuid`);
+uuid();
+
 // console.log(redditData);
 
 //#DUNDIR PATH
@@ -19,20 +23,25 @@ app.set('view engine', 'ejs');
 // #COMMENTS
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-const comments = [
+app.use(methodOverride(`_method`));
+let comments = [
   {
-    username: 'Ramin',
-    comment: 'dun dun dundundun dun dununun',
+    id: uuid(),
+    username: 'Ramin Djawadi',
+    comment: '"dun dun dundundun dun dununun"',
   },
   {
+    id: uuid(),
     username: 'Hannibal',
     comment: 'I love to eat children for breakfast',
   },
   {
+    id: uuid(),
     username: 'Bebang',
     comment: 'wakokohahaha grr grr',
   },
   {
+    id: uuid(),
     username: 'Mark',
     comment: 'Saging lang ang may puso!!!',
   },
@@ -103,17 +112,48 @@ app.get(`/comments`, (req, res) => {
 });
 
 // -COMMENT NEW
-// -GET
+// ?GET
 app.get(`/comments/new`, (req, res) => {
   const name = 'New Comment';
   console.log(req.body);
   res.render(`comments/new`, { name, title });
 });
-// -POST
+// ?POST
 app.post(`/comments`, (req, res) => {
   const { username, comment } = req.body;
-  comments.push({ username, comment });
+  comments.push({ username, comment, id: uuid() });
   console.log(req.body);
+  res.redirect(`/comments`);
+});
+
+app.get(`/comments/:id`, (req, res) => {
+  const name = 'Show';
+  const { id } = req.params;
+  const comment = comments.find((c) => c.id === id);
+  res.render(`comments/show`, { name, title, id, comment });
+});
+
+// -PATCH
+app.get(`/comments/:id/edit`, (req, res) => {
+  const name = 'Edit';
+  const { id } = req.params;
+  const comment = comments.find((c) => c.id === id);
+  res.render(`comments/edit`, { title, name, comment });
+});
+
+app.patch(`/comments/:id`, (req, res) => {
+  const { id } = req.params;
+  const newCommentText = req.body.comment;
+  const foundComment = comments.find((c) => c.id === id);
+  foundComment.comment = newCommentText;
+  res.redirect(`/comments`);
+});
+// -DELETE
+app.delete(`/comments/:id`, (req, res) => {
+  // const name = `Delete`;
+  const { id } = req.params;
+  // const foundComment = comments.find((c) => c.id === id);
+  comments = comments.filter((c) => c.id !== id);
   res.redirect(`/comments`);
 });
 // =404 CATCH

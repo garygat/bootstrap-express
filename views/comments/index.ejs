@@ -5,21 +5,27 @@
    <!-- +NAVBAR BOILERPLATE -->
    <%- include('../partials/navbar') %>
    <!-- =MAIN -->
-   <div class="container py-3">
+   <div class="container-fluid py-3">
       <h1 class="text-black-50 text-center py-5 display-4 text-open-sans">Comments</h1>
       <ul class="list group list-group-flush">
          <!-- =GRAB COMMENTS-->
-         <% for (let c of comments){ %>
-         <article class=" py-3 font-size-1-2">
-            <p class="lead"><%=c.comment %> </p>
-            <p class="blockquote-footer text-black-50 pl-4"> commented by <span
-                  class="text-primary font-weight-bold"><%= c.username %></span>
-            </p>
-            <% }%>
-         </article>
-         <div class="text-center">
-            <a href="/comments/new"> <button type="button" class="btn btn-primary text-white">New Comment </button></a>
-
+         <div class="container-fluid py-3">
+            <% for (let c of comments){ %>
+            <article class=" py-3 font-size-1-2">
+               <p class="lead"><%=c.comment %> </p>
+               <p class="blockquote-footer text-black-50 pl-4"> by <span
+                     class="text-primary font-weight-bold"><%= c.username %></span>
+                  <span class="rounded-pill badge-info text-coral font-size-10px  ml-3 py-1 px-3 "><a
+                        class="text-decoration-none  text-center text-light" href="/comments/<%= c.id %> ">View
+                     </a></span>
+               </p>
+               <% }%>
+            </article>
+            <div class="text-center pt-5 ">
+               <a href="/comments/new"> <button type="button" class="btn btn-primary text-white font-weight-bold">New
+                     Comment
+                  </button></a>
+            </div>
          </div>
    </div>
    <!-- +FOOTER BOILERPLATE -->

@@ -8,8 +8,11 @@ footer {
   margin-bottom: 0;
   background-color: #22282d;
 }
-.container-fluid {
+.container-fluid-r {
   padding: 0 1% 5% 10%;
+}
+.container-fluid {
+  padding: 3% 10%;
 }
 .navbar {
   background: linear-gradient(rgba(20, 25, 43, 0.87), rgba(12, 11, 19, 0.903));
@@ -44,6 +47,9 @@ footer {
 }
 .font-size-1-2 {
   font-size: 1.2rem;
+}
+.font-size-10px {
+  font-size: 10px;
 }
 .text-kalam {
   font-family: 'Kalam', cursive;
@@ -112,8 +118,11 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  .container-fluid {
+  .container-fluid-r {
     padding: 5% 3%;
+  }
+  .container-fluid {
+    padding: 3% 4%;
   }
   .display-2 {
     font-size: 2rem;
@@ -130,8 +139,11 @@ footer {
   }
 }
 @media only screen and (max-width: 600px) {
-  .container-fluid {
+  .container-fluid-r {
     padding: 5% 3%;
+  }
+  .container-fluid {
+    padding: 3% 4%;
   }
   .display-2 {
     font-size: 2rem;

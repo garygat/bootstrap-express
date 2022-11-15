@@ -1,0 +1,36 @@
+<!-- +HEAD BOILERPLATE -->
+<%- include('../partials/head') %>
+
+<body>
+   <!-- +NAVBAR BOILERPLATE -->
+   <%- include('../partials/navbar') %>
+   <!-- =MAIN -->
+   <div class="container py-3">
+      <h1 class="text-black-50 text-shadow-bl text-center py-5 pb-5 display-4 text-open-sans">New Comment</h1>
+
+      <!-- =POST-->
+      <div class="py-5">
+         <form action="/comments" method="post">
+            <div class="form-group">
+               <label for="username">Name</label>
+               <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+               <label for="comment">Message</label>
+               <textarea class="form-control" id="commment" name="comment" cols="20" rows="5" required></textarea>
+            </div>
+            <!-- <div class="form-group form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1">
+               <label class="form-check-label" for="exampleCheck1">Agree to terms & conditions</label>
+            </div> -->
+            <button type="submit" class="btn btn-primary">Submit</button><a href="/comments"> <button type="button"
+                  class="btn btn-warning text-white">Back to Comments </button></a>
+         </form>
+
+      </div>
+   </div>
+   <!-- +FOOTER BOILERPLATE -->
+   <%- include('../partials/footer') %>
+</body>
+
+</html>

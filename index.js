@@ -16,6 +16,28 @@ app.set;
 //#EJS
 app.set('view engine', 'ejs');
 
+// #COMMENTS
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+const comments = [
+  {
+    username: 'Ramin',
+    comment: 'dun dun dundundun dun dununun',
+  },
+  {
+    username: 'Hannibal',
+    comment: 'I love to eat children for breakfast',
+  },
+  {
+    username: 'Bebang',
+    comment: 'wakokohahaha grr grr',
+  },
+  {
+    username: 'Mark',
+    comment: 'Saging lang ang may puso!!!',
+  },
+];
+
 //#GET REQUESTS, RESPONSE
 // =HOME
 app.get('/', (req, res) => {
@@ -74,6 +96,26 @@ app.get(`/ka`, (req, res) => {
   res.render('ka', { name, title });
 });
 
+// =COMMENT
+app.get(`/comments`, (req, res) => {
+  const name = 'Comments';
+  res.render(`comments/index`, { name, title, comments });
+});
+
+// -COMMENT NEW
+// -GET
+app.get(`/comments/new`, (req, res) => {
+  const name = 'New Comment';
+  console.log(req.body);
+  res.render(`comments/new`, { name, title });
+});
+// -POST
+app.post(`/comments`, (req, res) => {
+  const { username, comment } = req.body;
+  comments.push({ username, comment });
+  console.log(req.body);
+  res.redirect(`/comments`);
+});
 // =404 CATCH
 app.get('*/:req1', (req, res) => {
   const name = 'NOT FOUND';

@@ -50,6 +50,7 @@ app.get('/tae', (req, res) => {
 app.get('/r/:subreddit', (req, res) => {
   const random2 = Math.floor(Math.random() * 30) + 1;
   const { subreddit } = req.params;
+  console.log('browsing ', req.params);
   const data = redditData[subreddit];
   if (data) {
     res.render('subreddit', { ...data, random2, title });
@@ -64,6 +65,21 @@ app.get(`/random`, (req, res) => {
   const random = Math.floor(Math.random() * 10) + 1;
   const h1Label = `Your random number is: `;
   res.render('random', { h1Rand: h1Label, rand: random, name, title });
+  // console.log('browsing ', req.params);
+});
+
+//  =KA
+app.get(`/ka`, (req, res) => {
+  const name = 'Kapitan';
+  res.render('ka', { name, title });
+});
+
+// =404 CATCH
+app.get('*/:req1', (req, res) => {
+  const name = 'NOT FOUND';
+  const { req1 } = req.params;
+  console.log(req1);
+  res.render('error404', { req: req1, name, title });
 });
 
 //#LISTENER

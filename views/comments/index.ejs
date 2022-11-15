@@ -10,13 +10,13 @@
       <ul class="list group list-group-flush">
          <!-- =GRAB COMMENTS-->
          <div class="container-fluid py-3">
-            <% for (let c of comments){ %>
+            <% for (let comment of comments){ %>
             <article class=" py-3 font-size-1-2">
-               <p class="lead"><%=c.comment %> </p>
+               <p class="lead"><%=comment.comment %> </p>
                <p class="blockquote-footer text-black-50 pl-4"> by <span
-                     class="text-primary font-weight-bold"><%= c.username %></span>
+                     class="text-primary font-weight-bold"><%= comments.username %></span>
                   <span class="rounded-pill badge-info text-coral font-size-10px  ml-3 py-1 px-3 "><a
-                        class="text-decoration-none  text-center text-light" href="/comments/<%= c.id %> ">View
+                        class="text-decoration-none  text-center text-light" href="/comments/<%= comment.id %> ">View
                      </a></span>
                </p>
                <% }%>

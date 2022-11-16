@@ -104,6 +104,10 @@ app.get(`/ka`, (req, res) => {
   const name = 'Kapitan';
   res.render('ka', { name, title });
 });
+app.get(`/burnek`, (req, res) => {
+  const name = 'Burnek';
+  res.render('burnek', { name, title });
+});
 
 // =COMMENT
 app.get(`/comments`, (req, res) => {

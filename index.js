@@ -74,7 +74,7 @@ app.get('/cats', (req, res) => {
 // =PAIN
 app.get('/tae', (req, res) => {
   const name = 'Awit';
-  const tae = '7200 ';
+  const tae = 'PHP7200 ';
   res.render('tae', { tae: tae, name, title });
 });
 // =SUBREDDIT PATH VARIABLE

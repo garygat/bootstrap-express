@@ -36,3 +36,40 @@ window.onscroll = function () {
     scrolled = false;
   }
 };
+
+// var $burnek = document.querySelector(`.burnek-hero`);
+// if ($(window).width() < 500) {
+//   // alert(`tae`);
+//   // var $burnek = document.querySelector(`#burnek-hero`);
+//   // $('#burnek-hero').toggleClass('w-50');
+//   $('#burnek-hero').toggleClass('w-100');
+//   // $('#burnek-hero').style.display = 'none';
+//   // burnek.classList.toggle()
+// } else if ($(window).width() > 500) {
+//   // $('#burnek-hero').toggleClass('w-50');
+//   $('#burnek-hero').removeClass('w-100');
+// }
+
+function burnekHeroImg() {
+  if ($(window).width() < 600) {
+    if ($('#burnek-hero').hasClass('w-50')) {
+      $('#burnek-hero').removeClass('w-50');
+      $('#burnek-hero').addClass('w-100');
+    }
+  } else if ($(window.width() > 600)) {
+    if ($('#burnek-hero').hasClass('w-100')) {
+      $('#burnek-hero').removeClass('w-100');
+      $('#burnek-hero').addClass('w-50');
+    }
+  }
+}
+// function burnekHeroImg2() {
+//   if ($(window.width() > 600)) {
+//     // $('#burnek-hero').addClass('w-50');
+//     $('#burnek-hero').removeClass('w-100');
+//   }
+// }
+// $(document).ready(burnekHeroImg2);
+// $(window.on('resize', burnekHeroImg2));
+$(document).ready(burnekHeroImg);
+$(window.on('resize', burnekHeroImg));

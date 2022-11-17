@@ -105,13 +105,13 @@ app.get(`/ka`, (req, res) => {
   res.render('ka', { name, title });
 });
 app.get(`/f/:page`, (req, res) => {
-  const name = 'Burnek';
+  // const name = 'Burnek';
   const { page } = req.params;
   const data = jsonData[page];
   // console.log(req.params);
   // console.log(jsonData[page]);
   if (data) {
-    res.render('pages', { name, title, ...data });
+    res.render('pages', { title, ...data });
   } else {
     const { req1 } = req.params;
     console.log(req1);

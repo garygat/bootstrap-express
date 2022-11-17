@@ -15,14 +15,16 @@
       <div class="container-fluid text-center py-lg-5 py-sm-1">
 
          <div class="row">
+            <!-- #START LOOP -->
             <% for (let video of videos){%>
+            <!-- -COLUMN CONDITION -->
             <% if (name === 'Kapitan') { %>
             <div class="column col-lg-4">
                <% } else{ %>
                <div class="column col-lg-6">
                   <% } %>
-
-
+                  <!-- -END OF COLUMN CONDITION -->
+                  <!-- +GRAB VIDS -->
                   <video id="jvVid1" width="200" controls autoplay" class="w-100 mh-100 py-3 rounde">
                      <source src="<%= video.video%>" type="video/mp4">
                      <source src="movie.ogg" type="video/ogg">
@@ -30,6 +32,7 @@
                   </video>
                </div>
                <% } %>
+               <!-- #END OF LOOP -->
 
 
             </div>

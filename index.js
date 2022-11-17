@@ -2,14 +2,14 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const redditData = require('./data.json');
+const jsonData = require('./data.json');
 const port = process.env.PORT || 3001;
 const methodOverride = require(`method-override`);
 const title = 'Express JS | ';
 const { v4: uuid } = require(`uuid`);
 uuid();
 
-// console.log(redditData);
+// console.log(jsonData);
 
 //#DUNDIR PATH
 app.use(express.static(path.join(__dirname, 'public')));
@@ -82,7 +82,7 @@ app.get('/r/:subreddit', (req, res) => {
   const random2 = Math.floor(Math.random() * 30) + 1;
   const { subreddit } = req.params;
   console.log('browsing ', req.params);
-  const data = redditData[subreddit];
+  const data = jsonData[subreddit];
   if (data) {
     res.render('subreddit', { ...data, random2, title });
   } else {
@@ -99,14 +99,24 @@ app.get(`/random`, (req, res) => {
   // console.log('browsing ', req.params);
 });
 
-//  =KA
+//  =PAGES
 app.get(`/ka`, (req, res) => {
   const name = 'Kapitan';
   res.render('ka', { name, title });
 });
-app.get(`/burnek`, (req, res) => {
+app.get(`/f/:page`, (req, res) => {
   const name = 'Burnek';
-  res.render('burnek', { name, title });
+  const { page } = req.params;
+  const data = jsonData[page];
+  // console.log(req.params);
+  // console.log(jsonData[page]);
+  if (data) {
+    res.render('pages', { name, title, ...data });
+  } else {
+    const { req1 } = req.params;
+    console.log(req1);
+    res.render('error404', { req: req1, name, title });
+  }
 });
 
 // =COMMENT

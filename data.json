@@ -147,5 +147,41 @@
         "img": "https://preview.redd.it/3kp91pfodfq91.jpg?width=576&auto=webp&s=dc1fb4442a7b1aceb38f7238062d4358b24c5300"
       }
     ]
+  },
+  "burnek": {
+    "name": "Burnek",
+    "img": "/images/burnek.jpg",
+    "videos": [
+      {
+        "video": "/videos/burnek1.mp4"
+      },
+      {
+        "video": "/videos/burnek2.mp4"
+      }
+    ]
+  },
+  "kapitan": {
+    "name": "Kapitan",
+    "img": "/images/kapitan.jpg",
+    "videos": [
+      {
+        "video": "/videos/kapitan1.mp4"
+      },
+      {
+        "video": "/videos/kapitan2.mp4"
+      },
+      {
+        "video": "/videos/kapitan3.mp4"
+      },
+      {
+        "video": "/videos/kapitan4.mp4"
+      },
+      {
+        "video": "/videos/kapitan5.mp4"
+      },
+      {
+        "video": "/videos/kapitan6.mp4"
+      }
+    ]
   }
 }

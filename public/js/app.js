@@ -7,7 +7,13 @@ setTimeout(() => {
   $(function () {
     $(document).scroll(function () {
       var $nav = $('#mainNavBar');
+      var $dropdown = $('#dropdownMenu');
+      var $dropdownItem = $('.dropdown-item');
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      // $dropdown.toggleClass('bg-drop-lg', $($nav).scrollTop() > $nav.height());
+
+      // $dropdown.toggleClass('opacity-10', $($nav).scrollTop() > $nav.height());
+      // $dropdownItem.toggleClass('text-secondary', $(this).scrollTop() > $nav.height());
       // $nav.toggleClass('fixed-top', $(this).scrollTop() > $nav.height());
     });
   });
@@ -50,6 +56,7 @@ window.onscroll = function () {
 //   $('#burnek-hero').removeClass('w-100');
 // }
 
+// #MOBILE IMAGE TO 100% WIDTH
 function burnekHeroImg() {
   if ($(window).width() < 600) {
     if ($('#burnek-hero').hasClass('w-50')) {

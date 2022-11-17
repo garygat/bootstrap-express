@@ -1,0 +1,71 @@
+<!-- +HEAD BOILERPLATE -->
+<%- include('partials/head') %>
+
+<body class="">
+   <!-- +NAVBAR BOILERPLATE -->
+   <%- include('partials/navbar') %>
+   <header class="header">
+      <h1 class="pt-5 text-center bg-coral py-5 text-kalam  text-white text-shadow-bl"><%= name%>
+      </h1>
+   </header>
+   <div class="container-fluid py-5 min-vh-100">
+      <div class="text-center py-lg-3 py-sm-1">
+         <img src="<%= img%>" alt="" id="burnek-hero" class="img-fluid img-rounded rounded w-50 burnek-hero px-3">
+      </div>
+      <div class="container-fluid text-center py-lg-5 py-sm-1">
+
+         <div class="row">
+            <% for (let video of videos){%>
+            <% if (name === 'Kapitan') { %>
+            <div class="column col-lg-4">
+               <% } else{ %>
+               <div class="column col-lg-6">
+                  <% } %>
+
+
+                  <video id="jvVid1" width="200" controls autoplay" class="w-100 mh-100 py-3 rounde">
+                     <source src="<%= video.video%>" type="video/mp4">
+                     <source src="movie.ogg" type="video/ogg">
+
+                  </video>
+               </div>
+               <% } %>
+
+
+            </div>
+         </div>
+
+         <p class="text-open-sans font-size-1-2">Lorem ipsum keme keme keme 48 years mabaho oblation doonek pinkalou at
+            ang
+            na , na ang
+            kirara
+            at
+            nang 48 years bakit
+            bigalou ugmas pamin paminta na ang nang shonga-shonga wasok.</p>
+         <p class="text-open-sans font-size-1-2 pb-5">Ang bakit pamenthol tungril cheapangga emena gushung buya
+            jupang-pang
+            juts
+            at ang bokot
+            sa na ang
+            jowabella jowa keme at
+            nang na na na buya conalei keme chuckie bokot jupang-pang keme keme pinkalou urky mahogany bakit ng sa chaka
+            ano
+            pamentos shonget bakit bongga valaj nang shonget Gino bongga jowabelles tamalis kasi sa na at ang sa bakit
+            katagalugan
+            thunder pranella na ang jowabelles cheapangga juts kirara lorem ipsum keme keme ng Mike nakakalurky kasi
+            katagalugan
+            doonek kasi wiz urky keme keme conalei at bakit shokot mashumers chipipay at bakit antibiotic juts at nang
+            quality
+            control at ang antibiotic jowabelles waz ano wiz bakit mahogany biway boyband at bakit juts wrangler ang
+            intonses
+            intonses krung-krung bakit bakit.
+         </p>
+
+
+
+      </div>
+      <!-- +INCLUDE FOOTER BOILERPLATE -->
+      <%- include('partials/footer') %>
+</body>
+
+</html>

@@ -17,7 +17,21 @@ footer {
 .navbar {
   background: linear-gradient(rgba(20, 25, 43, 0.87), rgba(12, 11, 19, 0.903));
 }
-
+/* .dropdown-menu {
+  background: linear-gradient(rgba(20, 25, 43, 0.87), rgba(12, 11, 19, 0.903));
+} */
+.opacity-10 {
+  opacity: 10;
+}
+.bg-drop {
+  background-color: #22282d11;
+}
+.bg-drop-lg {
+  background-color: #212d304d;
+}
+#dropdown-menu.show {
+  background-color: #212d304d;
+}
 .navbar .navbar-brand {
   font-weight: 600;
   font-family: 'Handlee', cursive;
@@ -89,6 +103,9 @@ footer {
 }
 .text-coral {
   color: coral;
+}
+.text-alice {
+  color: aliceblue;
 }
 .bg-coral {
   background-color: coral;
